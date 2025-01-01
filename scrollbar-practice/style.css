@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.scroll-container{
+    max-width: 400px;
+    height: 500px;
+    margin: 100px auto;
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px 0;
+    text-align: justify;
+}
+
+.scroll-div{
+    height: 100%;
+    overflow: hidden;
+    overflow-y: scroll;
+    padding: 20px;
+}
+
+.scroll-div h1{
+    margin-bottom: 10px;
+    text-align: center;
+}

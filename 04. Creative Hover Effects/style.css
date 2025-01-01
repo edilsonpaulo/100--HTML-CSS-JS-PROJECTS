@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    height: 100vh;
+    background-color: #999;
+}
+
+.container{
+    max-width: 800px;
+    height: 500px;
+    margin: 100px auto;
+    background-color: #111;
+    position: relative;
+}
+
+.clip{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s;
+}
+
+.clip-one{
+    background-image: url(images/1.jpg);
+    background-size: cover;
+    background-position: center;
+    clip-path: polygon(0 0, 46% 0, 39% 100%, 0 100%);
+}
+
+.clip-two{
+    background-image: url(images/2.jpg);
+    background-size: cover;
+    background-position: center;
+    clip-path: polygon(19% 0, 87% 0, 64% 100%, 33% 100%);
+}
+
+.clip-three{
+    background-image: url(images/3.jpg);
+    background-size: cover;
+    background-position: center;
+    clip-path: polygon(82% 0, 100% 0, 100% 100%, 33% 100% );
+}
+
+.container:hover .clip{
+    clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+}
+
+.container .clip:hover{
+    clip-path: polygon(0 0,100% 0, 100% 100%,0% 100%);
+}

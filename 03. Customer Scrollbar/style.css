@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: tomato;
+}
+
+.card{
+    max-width: 700px;
+    padding: 20px;
+    margin: 20PX;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+/* scrollbar  */
+
+::-webkit-scrollbar{
+    background-color: transparent;
+    width: 7px;
+    border: 1px dashed #fff;
+}
+
+::-webkit-scrollbar-thumb{
+    /* background-color: dodgerblue; */
+    background: linear-gradient(dodgerblue, purple);
+    border-radius: 50px;
+}

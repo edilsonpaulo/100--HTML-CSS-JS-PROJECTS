@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background-color: teal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.heading{
+    font-size: 9em;
+    font-weight: 900;
+    background-image: url(pexels-mahima-518693-1250260.jpg);
+    background-clip: text;
+    background-size: cover;
+    --webkit-background-clip: text;
+    color: transparent;
+}
